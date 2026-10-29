@@ -1,0 +1,2863 @@
+[
+  {
+    "generic_name": "octreotide acetate",
+    "brand_examples": [
+      "Sandostatin"
+    ],
+    "therapy_area": "endocrine / neuroendocrine",
+    "application_numbers": [],
+    "note": "three injections a day from a vial, which is about as much injection burden as a chronic therapy carries",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 0.3333333333333333,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "enfuvirtide",
+    "brand_examples": [
+      "Fuzeon"
+    ],
+    "therapy_area": "HIV",
+    "application_numbers": [],
+    "note": "twice daily, reconstituted each time; small population but the worst routine in the category",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 0.5,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "cyanocobalamin",
+    "brand_examples": [
+      "vitamin B12"
+    ],
+    "therapy_area": "haematology",
+    "application_numbers": [],
+    "note": "very large population, very cheap drug; the question is whether a device is worth it at this price point",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 30,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "haloperidol decanoate",
+    "brand_examples": [
+      "Haldol Decanoate"
+    ],
+    "therapy_area": "psychiatry",
+    "application_numbers": [],
+    "note": "long-acting antipsychotic, clinic administered from a vial",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "testosterone cypionate",
+    "brand_examples": [
+      "Depo-Testosterone"
+    ],
+    "therapy_area": "endocrine",
+    "application_numbers": [],
+    "note": "vial and syringe; a separate SC auto-injector product exists but this presentation has no device",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 14,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "bortezomib",
+    "brand_examples": [
+      "Velcade"
+    ],
+    "therapy_area": "oncology / myeloma",
+    "application_numbers": [],
+    "note": "reconstituted and clinic administered",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "leuprolide acetate",
+    "brand_examples": [
+      "Lupron Depot",
+      "Eligard"
+    ],
+    "therapy_area": "oncology / endometriosis",
+    "application_numbers": [],
+    "note": "supplied as a kit needing reconstitution before every dose",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "triptorelin",
+    "brand_examples": [
+      "Trelstar"
+    ],
+    "therapy_area": "oncology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 2.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "enoxaparin sodium",
+    "brand_examples": [
+      "Lovenox"
+    ],
+    "therapy_area": "anticoagulation",
+    "application_numbers": [],
+    "note": "prefilled syringe with a visible needle; extended prophylaxis and cancer-associated thrombosis run for months",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "fondaparinux sodium",
+    "brand_examples": [
+      "Arixtra"
+    ],
+    "therapy_area": "anticoagulation",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "methylnaltrexone bromide",
+    "brand_examples": [
+      "Relistor"
+    ],
+    "therapy_area": "gastroenterology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 2,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "paliperidone palmitate",
+    "brand_examples": [
+      "Invega Sustenna"
+    ],
+    "therapy_area": "psychiatry",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "medroxyprogesterone acetate",
+    "brand_examples": [
+      "Depo-Provera",
+      "depo-subQ 104"
+    ],
+    "therapy_area": "contraception",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.65,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 91,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "cabotegravir / rilpivirine",
+    "brand_examples": [
+      "Cabenuva"
+    ],
+    "therapy_area": "HIV",
+    "application_numbers": [],
+    "note": "two separate intramuscular injections per visit, at the top of what an auto-injector format can hold",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 2.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "peginterferon alfa-2a",
+    "brand_examples": [
+      "Pegasys"
+    ],
+    "therapy_area": "hepatology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "filgrastim",
+    "brand_examples": [
+      "Neupogen",
+      "Zarxio"
+    ],
+    "therapy_area": "oncology support",
+    "application_numbers": [],
+    "note": "given as a course after chemotherapy rather than chronically",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "ustekinumab",
+    "brand_examples": [
+      "Stelara"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 84,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "methotrexate",
+    "brand_examples": [
+      "Otrexup",
+      "Rasuvo"
+    ],
+    "therapy_area": "rheumatology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "glatiramer acetate",
+    "brand_examples": [
+      "Copaxone"
+    ],
+    "therapy_area": "multiple sclerosis",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 2,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "interferon beta-1a",
+    "brand_examples": [
+      "Avonex"
+    ],
+    "therapy_area": "multiple sclerosis",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "interferon beta-1b",
+    "brand_examples": [
+      "Betaseron",
+      "Extavia"
+    ],
+    "therapy_area": "multiple sclerosis",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 2,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "adalimumab",
+    "brand_examples": [
+      "Humira"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.8,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 14,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "etanercept",
+    "brand_examples": [
+      "Enbrel"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "dupilumab",
+    "brand_examples": [
+      "Dupixent"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 2.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 14,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "secukinumab",
+    "brand_examples": [
+      "Cosentyx"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "tocilizumab",
+    "brand_examples": [
+      "Actemra"
+    ],
+    "therapy_area": "rheumatology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.9,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "golimumab",
+    "brand_examples": [
+      "Simponi"
+    ],
+    "therapy_area": "rheumatology",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "semaglutide",
+    "brand_examples": [
+      "Ozempic",
+      "Wegovy"
+    ],
+    "therapy_area": "diabetes / obesity",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "dulaglutide",
+    "brand_examples": [
+      "Trulicity"
+    ],
+    "therapy_area": "diabetes",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "liraglutide",
+    "brand_examples": [
+      "Victoza",
+      "Saxenda"
+    ],
+    "therapy_area": "diabetes / obesity",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "insulin glargine",
+    "brand_examples": [
+      "Lantus",
+      "Basaglar"
+    ],
+    "therapy_area": "diabetes",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.3,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "teriparatide",
+    "brand_examples": [
+      "Forteo"
+    ],
+    "therapy_area": "osteoporosis",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.08,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "abaloparatide",
+    "brand_examples": [
+      "Tymlos"
+    ],
+    "therapy_area": "osteoporosis",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.08,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "somatropin",
+    "brand_examples": [
+      "Norditropin",
+      "Genotropin"
+    ],
+    "therapy_area": "endocrine",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.3,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "denosumab",
+    "brand_examples": [
+      "Prolia"
+    ],
+    "therapy_area": "osteoporosis",
+    "application_numbers": [],
+    "note": "twice a year, so there is very little adherence burden for a device to remove",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 1.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 182,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "pegfilgrastim",
+    "brand_examples": [
+      "Neulasta"
+    ],
+    "therapy_area": "oncology support",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.6,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 21,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "on_body",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "testosterone enanthate",
+    "brand_examples": [
+      "Xyosted"
+    ],
+    "therapy_area": "endocrine",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "naloxone hydrochloride",
+    "brand_examples": [
+      "Evzio (withdrawn)"
+    ],
+    "therapy_area": "opioid overdose",
+    "application_numbers": [],
+    "note": "the auto-injector that existed was withdrawn; mostly nasal spray or a vial and syringe now",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.4,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 0,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "epinephrine",
+    "brand_examples": [
+      "EpiPen",
+      "Auvi-Q"
+    ],
+    "therapy_area": "anaphylaxis",
+    "application_numbers": [],
+    "note": "several competing auto-injectors already",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.3,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 0,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "over_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "sumatriptan succinate",
+    "brand_examples": [
+      "Imitrex STATdose"
+    ],
+    "therapy_area": "migraine",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.5,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 0,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "glucagon",
+    "brand_examples": [
+      "Gvoke",
+      "Baqsimi"
+    ],
+    "therapy_area": "severe hypoglycaemia",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.2,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 0,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "autoinjector",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "500k_5m",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "apomorphine hydrochloride",
+    "brand_examples": [
+      "Apokyn"
+    ],
+    "therapy_area": "Parkinson's disease",
+    "application_numbers": [],
+    "note": "rescue dosing several times a day, so it carries chronic burden despite being an as-needed medicine",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 0.3,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 0.3333333333333333,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "pen",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "naltrexone for extended-release injectable suspension",
+    "brand_examples": [
+      "Vivitrol"
+    ],
+    "therapy_area": "substance use disorder",
+    "application_numbers": [],
+    "note": "4 mL, past the format, and needs reconstituting",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 4.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "aripiprazole lauroxil",
+    "brand_examples": [
+      "Aristada"
+    ],
+    "therapy_area": "psychiatry",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 2.4,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 42,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "fulvestrant",
+    "brand_examples": [
+      "Faslodex"
+    ],
+    "therapy_area": "oncology / breast",
+    "application_numbers": [],
+    "note": "two 5 mL intramuscular injections per dose",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IM",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 5.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 28,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "icatibant",
+    "brand_examples": [
+      "Firazyr"
+    ],
+    "therapy_area": "hereditary angioedema",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "peptide",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 3.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 0,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": true,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "prefilled_syringe",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "azacitidine",
+    "brand_examples": [
+      "Vidaza"
+    ],
+    "therapy_area": "oncology / MDS",
+    "application_numbers": [],
+    "note": "",
+    "modality": {
+      "value": "small_molecule",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 4.0,
+      "source": "estimate"
+    },
+    "dose_interval_days": {
+      "value": 1,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": false,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": true,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": false,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "daratumumab and hyaluronidase",
+    "brand_examples": [
+      "Darzalex Faspro"
+    ],
+    "therapy_area": "oncology / myeloma",
+    "application_numbers": [],
+    "note": "15 mL by slow subcutaneous push; nowhere near an auto-injector format",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "SC",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 15.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 7,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "under_50k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "ocrelizumab",
+    "brand_examples": [
+      "Ocrevus"
+    ],
+    "therapy_area": "multiple sclerosis",
+    "application_numbers": [],
+    "note": "intravenous infusion, so no injector of any kind applies",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IV",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 300.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 182,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  },
+  {
+    "generic_name": "infliximab",
+    "brand_examples": [
+      "Remicade"
+    ],
+    "therapy_area": "immunology",
+    "application_numbers": [],
+    "note": "intravenous; a separate subcutaneous product exists under a different application",
+    "modality": {
+      "value": "biologic",
+      "source": "seed"
+    },
+    "route": {
+      "value": "IV",
+      "source": "seed"
+    },
+    "volume_ml": {
+      "value": 250.0,
+      "source": "seed"
+    },
+    "dose_interval_days": {
+      "value": 56,
+      "source": "seed"
+    },
+    "chronic": {
+      "value": true,
+      "source": "seed"
+    },
+    "self_administered": {
+      "value": false,
+      "source": "seed"
+    },
+    "existing_device": {
+      "value": "none",
+      "source": "seed"
+    },
+    "reconstitution_required": {
+      "value": false,
+      "source": "seed"
+    },
+    "cold_chain": {
+      "value": true,
+      "source": "seed"
+    },
+    "population_band": {
+      "value": "50k_500k",
+      "source": "estimate"
+    },
+    "latest_patent_expiry": {
+      "value": null,
+      "source": "unknown"
+    },
+    "latest_exclusivity_expiry": {
+      "value": null,
+      "source": "unknown"
+    }
+  }
+]

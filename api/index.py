@@ -1,7 +1,7 @@
 """
-Vercel serverless function entry point.
+Vercel entry point for the FastAPI application.
 """
 from api.main import app
 
-# Vercel will use this as the handler
-handler = app
+# Vercel Python runtime looks for the ASGI app as 'app'
+__all__ = ["app"]
