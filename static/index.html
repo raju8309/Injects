@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inject Fit</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plane: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
+    --good: #0ca30c; --warning: #fab219; --critical: #d03b3b;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --axis: #383835;
+      --border: rgba(255,255,255,0.10);
+      --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --axis: #383835;
+    --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--plane); color: var(--ink);
+    font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 32px 16px 72px; }
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  h1 { font-size: 21px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--ink-2); font-size: 13.5px; margin: 0; max-width: 64ch; }
+  .meta { color: var(--muted); font-size: 12.5px; text-align: right; }
+  button.theme { background: var(--surface); color: var(--ink-2);
+    border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px;
+    font-size: 12.5px; cursor: pointer; }
+
+  .banner { background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--warning); border-radius: var(--radius);
+    padding: 13px 16px; margin: 20px 0 4px; font-size: 13px; color: var(--ink-2); }
+  .banner strong { color: var(--ink); }
+
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 12px 0 8px; }
+  @media (max-width: 880px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .tiles { grid-template-columns: 1fr; } }
+  .tile { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px 15px; }
+  .tile .k { font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+  .tile .v { font-size: 30px; font-weight: 650; letter-spacing: -0.02em;
+    margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+  .tile .n { font-size: 12.5px; color: var(--ink-2); }
+
+  section.card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px 18px 14px; margin-top: 12px; }
+  .card h2 { font-size: 15.5px; margin: 0 0 3px; letter-spacing: -0.005em; }
+  .card .why { font-size: 13px; color: var(--ink-2); margin: 0 0 14px; max-width: 76ch; }
+  .card .why em { font-style: normal; color: var(--ink); font-weight: 600; }
+
+  .row { border-bottom: 1px solid var(--grid); padding: 11px 0; }
+  .row:last-child { border-bottom: none; }
+  .rowtop { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .rank { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 20px; }
+  .name { font-weight: 600; font-size: 14px; }
+  .brands { font-size: 12px; color: var(--muted); }
+  .area { font-size: 11.5px; color: var(--ink-2); }
+  .scorebox { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .score { font-size: 17px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .conf { font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+  .meter { height: 5px; background: var(--grid); border-radius: 3px; overflow: hidden;
+    margin: 8px 0 7px; display: flex; }
+  .meter i { display: block; height: 100%; }
+
+  .reasons { display: flex; gap: 6px 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); }
+  .reasons span { display: inline-flex; align-items: center; gap: 5px; }
+  .reasons .dot { width: 7px; height: 7px; border-radius: 2px; flex: none; }
+  .reasons .off { color: var(--muted); font-style: italic; }
+  .note { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--grid); }
+  th { font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; padding-right: 18px; }
+  tr > :last-child { padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  .pill { font-size: 11px; padding: 1.5px 7px; border-radius: 99px;
+    border: 1px solid var(--border); color: var(--ink-2); white-space: nowrap; }
+  .pill.est { border-color: var(--warning); color: var(--ink-2); }
+  .reason { color: var(--muted); font-size: 12px; }
+  details.tv { margin-top: 10px; }
+  details.tv summary { font-size: 12px; color: var(--muted); cursor: pointer; }
+  details.tv[open] summary { margin-bottom: 8px; }
+  .err { color: var(--critical); font-size: 14px; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
+  code { font-size: 12px; background: var(--surface); border: 1px solid var(--border);
+    padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Inject Fit</h1>
+      <p class="sub">Which approved injectables are worth re-presenting in an auto-injector, and why.</p>
+    </div>
+    <div>
+      <button class="theme" id="theme">theme</button>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
+
+  <div id="app"><p class="sub" style="margin-top:28px">loading…</p></div>
+
+  <footer>
+    Every score can be taken apart. <code>/api/candidate/{name}</code> returns each field
+    with the source it came from, and <code>/api/provenance</code> says how much of the
+    whole set is a source file versus a judgement.
+  </footer>
+</div>
+
+<script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pct = v => v === null || v === undefined ? '—' : Math.round(v * 100) + '%';
+
+const COMPONENT_COLOR = {
+  dosing_burden:     'var(--series-1)',
+  device_whitespace: 'var(--series-3)',
+  volume_fit:        'var(--series-4)',
+  chronic_use:       'var(--series-2)',
+  population:        'var(--ink-2)',
+  pathway_timing:    'var(--muted)',
+};
+const COMPONENT_LABEL = {
+  dosing_burden: 'injection burden',
+  device_whitespace: 'device gap',
+  volume_fit: 'volume',
+  chronic_use: 'chronic use',
+  population: 'population',
+  pathway_timing: 'patent status',
+};
+
+/* A stacked meter of where the points came from, with the unearned
+   remainder left visibly grey rather than closed up. */
+function meter(components) {
+  const total = components.reduce((a, c) => a + c.max_points, 0);
+  let out = '';
+  components.forEach(c => {
+    if (c.points > 0)
+      out += `<i style="width:${(c.points / total) * 100}%;background:${COMPONENT_COLOR[c.name]}"></i>`;
+  });
+  return `<div class="meter">${out}</div>`;
+}
+
+function reasons(components) {
+  return '<div class="reasons">' + components.map(c =>
+    c.known
+      ? `<span><i class="dot" style="background:${COMPONENT_COLOR[c.name]}"></i>${esc(c.reason)}</span>`
+      : `<span class="off"><i class="dot" style="background:var(--grid)"></i>${esc(c.reason)}</span>`
+  ).join('') + '</div>';
+}
+
+function candidateRow(s, i) {
+  return `<div class="row">
+    <div class="rowtop">
+      <span class="rank">${i + 1}</span>
+      <span class="name">${esc(s.generic_name)}</span>
+      <span class="brands">${esc(s.brand_examples.join(', '))}</span>
+      <span class="area">${esc(s.therapy_area)}</span>
+      <span class="scorebox">
+        <span class="conf">${pct(s.confidence)} of inputs known</span>
+        <span class="score">${s.score}</span>
+      </span>
+    </div>
+    ${meter(s.components)}
+    ${reasons(s.components)}
+    ${s.note ? `<div class="note">${esc(s.note)}</div>` : ''}
+  </div>`;
+}
+
+function render(r) {
+  const open = r.open_ground, cont = r.contested, resc = r.rescue,
+        blocked = r.blocked, thin = r.thin;
+  const patentGap = (r.biggest_gaps.find(g => g[0] === 'latest_patent_expiry') || [null, 0])[1];
+
+  const banner = patentGap > 0 ? `<div class="banner">
+    <strong>Patent status is not loaded for ${patentGap} of ${r.total} candidates.</strong>
+    That field is deliberately left empty in the seed data rather than guessed, because the
+    whole 505(b)(2) question turns on it. Run <code>python3 -m ingest.orange_book</code>
+    against the FDA files to fill it. Until then these rankings are directional: they say
+    where to look, not what to file.
+  </div>` : '';
+
+  const tiles = `<div class="tiles">
+    <div class="tile">
+      <div class="k">Open ground</div>
+      <div class="v">${open.length}</div>
+      <div class="n">no device at all, or a bare syringe</div>
+    </div>
+    <div class="tile">
+      <div class="k">Contested</div>
+      <div class="v" style="color:var(--series-2)">${cont.length}</div>
+      <div class="n">a pen or injector already exists</div>
+    </div>
+    <div class="tile">
+      <div class="k">Rescue</div>
+      <div class="v">${resc.length}</div>
+      <div class="n">as-needed, judged on its own terms</div>
+    </div>
+    <div class="tile">
+      <div class="k">Ruled out</div>
+      <div class="v">${blocked.length}</div>
+      <div class="n">route or volume the format cannot take</div>
+    </div>
+  </div>`;
+
+  const rescueCard = resc.length ? `<section class="card">
+    <h2>Rescue</h2>
+    <p class="why">Judged separately, because scoring a rescue medicine against a
+      chronic-adherence rubric buries every one of them. <em>What a better rescue device
+      buys is that a frightened bystander can work it</em>, not that somebody is spared a
+      hundred injections, so injection frequency is the wrong lens and these scores are
+      comparable only to each other.</p>
+    ${resc.map(candidateRow).join('')}
+  </section>` : '';
+
+  const openCard = `<section class="card">
+    <h2>Open ground</h2>
+    <p class="why">Chronic therapies where nobody has built the category yet. These still
+      ship as a vial and a syringe, or a prefilled syringe with the needle in plain view, so
+      the opportunity is <em>creating the format</em> rather than taking share from one.
+      Scored out of 100, with the bar showing which parts of the score were earned and the
+      grey remainder showing what was not. ${pct(r.mean_confidence)} of scored inputs are
+      known across the whole set.</p>
+    ${open.map(candidateRow).join('')}
+  </section>`;
+
+  const contCard = `<section class="card">
+    <h2>Contested</h2>
+    <p class="why">These score well on injection burden and badly on device gap, because a
+      pen or auto-injector already exists. <em>That is a different decision, not a worse
+      candidate</em>, which is why it is a separate list. Winning here means beating an
+      incumbent on clinical preference, not opening a category, and it needs different
+      evidence and a different partner conversation.</p>
+    ${cont.map(candidateRow).join('')}
+  </section>`;
+
+  const blockedCard = `<section class="card">
+    <h2>Ruled out, and on what grounds</h2>
+    <p class="why">Shown rather than filtered away, because <em>"why isn't X on this list"</em>
+      is the first question anyone asks, and a tool that answers it with silence does not get
+      used twice. Each row says what ruled it out and whether that came from a known
+      presentation or an estimate, so a wrong gate can be corrected instead of argued with.</p>
+    <table>
+      <thead><tr><th>Drug</th><th>Area</th><th>Gate</th><th>Reason</th><th>From</th></tr></thead>
+      <tbody>${blocked.map(s => s.gates.map(g => `<tr>
+        <td>${esc(s.generic_name)}</td>
+        <td class="reason">${esc(s.therapy_area)}</td>
+        <td><span class="pill">${esc(g.gate)}</span></td>
+        <td class="reason">${esc(g.reason)}</td>
+        <td><span class="pill ${g.source === 'estimate' ? 'est' : ''}">${esc(g.source)}</span></td>
+      </tr>`).join('')).join('')}</tbody>
+    </table>
+  </section>`;
+
+  const thinCard = thin.length ? `<section class="card">
+    <h2>Too thin to rank</h2>
+    <p class="why">Under ${pct(r.confidence_floor)} of the scored inputs are known for these, so
+      whatever number came out is not worth acting on. <em>Held back rather than mixed in</em>,
+      because a ranking built on two facts and six blanks looks exactly like a researched one.</p>
+    <table>
+      <thead><tr><th>Drug</th><th class="num">Inputs known</th><th>Missing</th></tr></thead>
+      <tbody>${thin.map(s => `<tr>
+        <td>${esc(s.generic_name)}</td>
+        <td class="num">${pct(s.confidence)}</td>
+        <td class="reason">${esc(s.unknown_fields.join(', '))}</td>
+      </tr>`).join('')}</tbody>
+    </table>
+  </section>` : '';
+
+  const weightCard = `<section class="card">
+    <h2>How the score is built</h2>
+    <p class="why">Six components, weighted to add to 100, set here rather than buried in the
+      code so they can be argued with. <em>A field that is not known scores zero, never the
+      favourable value</em> — that is the one rule in this tool that matters, because the way
+      a screener does real damage is by ranking a drug highly for an absence of evidence.</p>
+    <table>
+      <thead><tr><th>Component</th><th class="num">Weight</th><th>What it asks</th></tr></thead>
+      <tbody>
+        <tr><td>Injection burden</td><td class="num">${r.weights.dosing_burden}</td>
+          <td class="reason">how often the patient has to inject. a device earns most where injecting happens most</td></tr>
+        <tr><td>Device gap</td><td class="num">${r.weights.device_whitespace}</td>
+          <td class="reason">is there already a pen or injector for this</td></tr>
+        <tr><td>Volume</td><td class="num">${r.weights.volume_fit}</td>
+          <td class="reason">does the dose fit the format comfortably, halved if it needs reconstituting</td></tr>
+        <tr><td>Chronic use</td><td class="num">${r.weights.chronic_use}</td>
+          <td class="reason">chronic therapy compounds. rescue is judged on usability instead</td></tr>
+        <tr><td>Population</td><td class="num">${r.weights.population}</td>
+          <td class="reason">how many US patients are on it, as a band rather than a count</td></tr>
+        <tr><td>Patent status</td><td class="num">${r.weights.pathway_timing}</td>
+          <td class="reason">is the reference product clear of patent. from the Orange Book only</td></tr>
+      </tbody>
+    </table>
+  </section>`;
+
+  document.getElementById('app').innerHTML =
+    banner + tiles + openCard + rescueCard + contCard + blockedCard + thinCard + weightCard;
+  document.getElementById('meta').innerHTML =
+    `${r.total} candidates · scored ${esc(r.generated_at)}`;
+}
+
+/* theme toggle, remembered per browser only. if storage is blocked this
+   silently does nothing, which is the correct amount of nothing. */
+(function theme() {
+  const btn = document.getElementById('theme');
+  let saved = null;
+  try { saved = localStorage.getItem('if-theme'); } catch (e) {}
+  if (saved) document.documentElement.dataset.theme = saved;
+  btn.addEventListener('click', () => {
+    const dark = getComputedStyle(document.body).backgroundColor === 'rgb(13, 13, 13)';
+    const next = dark ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('if-theme', next); } catch (e) {}
+  });
+})();
+
+fetch('/api/ranking')
+  .then(r => r.ok ? r.json() : r.json().then(e => { throw new Error(e.detail || r.status); }))
+  .then(render)
+  .catch(e => {
+    document.getElementById('app').innerHTML =
+      `<section class="card"><p class="err">${esc(e.message)}</p></section>`;
+  });
+</script>
+</body>
+</html>
