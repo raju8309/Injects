@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
 from core.scoring import rank, score
@@ -85,10 +85,24 @@ def health():
 def index():
     # no-store, or the browser cheerfully serves yesterday's ranking
     # against today's data, which is its own kind of wrong answer.
-    return FileResponse(
-        STATIC / "index.html",
-        headers={"Cache-Control": "no-store, max-age=0"},
-    )
+    try:
+        return FileResponse(
+            STATIC / "index.html",
+            headers={"Cache-Control": "no-store, max-age=0"},
+        )
+    except FileNotFoundError:
+        # Fallback for Vercel serverless environment
+        index_path = Path(__file__).parent.parent / "static" / "index.html"
+        if index_path.exists():
+            return FileResponse(
+                index_path,
+                headers={"Cache-Control": "no-store, max-age=0"},
+            )
+        raise HTTPException(404, "Dashboard not found")
 
 
-app.mount("/static", StaticFiles(directory=STATIC), name="static")
+try:
+    app.mount("/static", StaticFiles(directory=STATIC), name="static")
+except Exception:
+    # Skip static mount if directory doesn't exist (serverless environment)
+    pass
